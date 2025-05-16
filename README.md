@@ -30,7 +30,7 @@ Diese API dient der Analyse und Auswertung von EDI/DFÜ-Transaktionen (z. B. D
 #### 1. Repository klonen
 
 ```bash
-git clone https://github.com/dein-user/edi-analyse-api.git
+git clone https://github.com/tobiasmelzl/edi-analyse-api.git
 cd edi-analyse-api/api
 ```
 
