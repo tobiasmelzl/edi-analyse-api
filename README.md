@@ -1,7 +1,9 @@
 # EDI Analyse‑API
 
 **Projektbeschreibung:**  
-Diese API dient der Analyse und Auswertung von EDI/DFÜ-Transaktionen (z. B. DELFOR, DESADV, DELJIT). Sie stellt Metriken bereit, erlaubt die Verwaltung von Partnern, zeigt Fehlerraten, Transaktionen und vieles mehr – **vollständig asynchron mit FastAPI & MySQL**.
+Diese API dient der Analyse und Auswertung von EDI/DFÜ-Transaktionen (z. B. DELFOR, DESADV, DELJIT). 
+Sie stellt Metriken bereit, erlaubt die Verwaltung von Partnern, zeigt Fehlerraten, Transaktionen 
+und vieles mehr – **vollständig asynchron mit FastAPI & MySQL**.
 
 ---
 
@@ -81,7 +83,7 @@ uvicorn app.main:app --reload
 API läuft unter: [http://127.0.0.1:8000](http://127.0.0.1:8000)
 
 Die interaktive Swagger-Dokumentation ist hier erreichbar:  
-📘 http://127.0.0.1:8000/docs
+http://127.0.0.1:8000/docs
 
 ---
 
@@ -163,16 +165,16 @@ PYTHONPATH=./ pytest --cov=app --cov-report=term
 
 ## FAQ
 
-**🔹 Ich bekomme beim Start einen Fehler zu `.env` oder `DATABASE_URL`.**  
+**Ich bekomme beim Start einen Fehler zu `.env` oder `DATABASE_URL`.**  
 → Stelle sicher, dass `.env` existiert und korrekt konfiguriert ist.
 
-**🔹 Was ist der Standardnutzer für JWT?**  
+**Was ist der Standardnutzer für JWT?**  
 → `username=demo`, `password=demo` (wird automatisch beim Start angelegt)
 
-**🔹 Wie kann ich den API Key ändern?**  
+**Wie kann ich den API Key ändern?**  
 → In `.env` Datei ändern und Server neu starten.
 
-**🔹 Wie mache ich einen Production-Start?**  
+**Wie mache ich einen Production-Start?**  
 → Statt `--reload` → mit Gunicorn/Uvicorn in Docker oder via `systemd` starten (siehe Deployment-Doku – nicht enthalten).
 
 ---
